@@ -56,8 +56,9 @@ a {
 	text-decoration: none;
 }
 .main-card {
-  width: 800px;
-  height: 400px;
+	width: 60%;
+  max-width: 800px;
+  max-height: 400px;
   margin: 10px auto;
   border-radius: $borderRadius;
   position: relative;
@@ -88,7 +89,7 @@ a {
   grid-area: title;
 }
 .content {
-	width: 300px;
+	max-width: 300px;
 	grid-area: content;
 	font-size: 2em;
 }
@@ -185,4 +186,13 @@ a {
 	}
 }
 
+/* Keyframes for content */
+@media screen and (max-width: 500px) {
+	.content {
+		font-size: 1.5em;
+	}
+	.main-card {
+		background-position: 80%;
+	}
+}
 </style>
