@@ -56,8 +56,7 @@ a {
 	text-decoration: none;
 }
 .main-card {
-	width: 60%;
-  max-width: 800px;
+	width: 60vw;
   max-height: 400px;
   margin: 10px auto;
   border-radius: $borderRadius;
