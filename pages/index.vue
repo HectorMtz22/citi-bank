@@ -10,7 +10,9 @@
 				<p><b>Choose card considering your</b></p>
 				<p>personal needs</p>
 			</main>
-			<button class="btn">Shop Now</button>
+			<button class="btn">
+				<span>Shop Now</span>
+			</button>
     </section>
   </main>
 </template>
@@ -59,7 +61,7 @@ a {
   margin: 10px auto;
   border-radius: $borderRadius;
   position: relative;
-  background: url("/citi-bank.jpg"), var(--color3);
+  background: url("~static/citi-bank.jpg"), var(--color3);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: 50%;
@@ -101,6 +103,11 @@ a {
 	background: var(--color4);
 	cursor: pointer;
 	transition: $transition;
+	& span {
+	background: linear-gradient(to right, var(--color1), var(--color3));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+	}
 	&:hover {
 		background: var(--color3);
 	}
@@ -170,7 +177,7 @@ a {
 
 /* Animations */
 .main-card {
-	animation: main-card 2s ease forwards;
+	animation: main-card 2s ease forwards 0.3s;
 }
 @keyframes main-card {
 	to {
